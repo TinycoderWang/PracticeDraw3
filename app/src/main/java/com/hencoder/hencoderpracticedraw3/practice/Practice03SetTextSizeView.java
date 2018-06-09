@@ -9,7 +9,7 @@ import android.view.View;
 
 public class Practice03SetTextSizeView extends View {
     Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
-    String text = "Hello HenCoder";
+    String text = "Hello TinyCoder";
 
     public Practice03SetTextSizeView(Context context) {
         super(context);
@@ -32,18 +32,22 @@ public class Practice03SetTextSizeView extends View {
         // 使用 paint.setTextSize() 来设置不同大小的文字
 
         // 第一处：文字大小 16
+        paint.setTextSize(16);
         canvas.drawText(text, 50, y, paint);
 
         y += 30;
         // 第一处：文字大小 24
+        paint.setTextSize(24);
         canvas.drawText(text, 50, y, paint);
 
         y += 55;
         // 第一处：文字大小 48
+        paint.setTextSize(48);
         canvas.drawText(text, 50, y, paint);
 
         y += 80;
         // 第一处：文字大小 72
+        paint.setTextSize(72);
         canvas.drawText(text, 50, y, paint);
     }
 }

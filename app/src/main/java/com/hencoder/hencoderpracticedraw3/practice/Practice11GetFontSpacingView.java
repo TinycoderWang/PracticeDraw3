@@ -9,7 +9,7 @@ import android.view.View;
 
 public class Practice11GetFontSpacingView extends View {
     Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
-    String text = "Hello HenCoder";
+    String text = "Hello TinyCoder";
 
     public Practice11GetFontSpacingView(Context context) {
         super(context);
@@ -36,8 +36,10 @@ public class Practice11GetFontSpacingView extends View {
 
         canvas.drawText(text, 50, 100, paint);
 
+        spacing = paint.getFontSpacing();
         canvas.drawText(text, 50, 100 + spacing, paint);
 
+        spacing = paint.getFontSpacing();
         canvas.drawText(text, 50, 100 + spacing * 2, paint);
     }
 }
